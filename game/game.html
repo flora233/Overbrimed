@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Overbrimed</title>
+		<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link href="game.css" rel="stylesheet">
+	</head>
+	<body>
+		<!-- bootstrap js library -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+	
+		<!-- jquery for choose active page -->
+		<script>
+			$(document).ready(function() {
+				$('.nav-item').click(function() {
+					$('.nav-item').removeClass('active');
+					$(this).closest('.nav-item').addClass('active')
+				});
+			}); 
+		</script>
+        <!-- jquery end -->
+		<main>
+			<nav class="navbar navbar-expand-lg navbar-light bg-transparent ml-4 mt-4">
+				<a class="navbar-brand" href="#">Overbrimed</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+					<a class="nav-link" href="../home/home.html">Tour <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="http://fangzhouguo.com">About</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="../reference/step1.html">What I can do</a>
+					</li>
+				</ul>
+				</div>
+			</nav>
+		</main>
+
+		<!-- the canvas -->
+		<audio src="../assets/background.mp3" autoplay loop></audio>
+		<div id="canvas"></div>
+		<!-- game navigation -->
+		<div class="scene">
+			<a id="s-0">(0)Farm Cotton</a>
+			<a id="s-1">(1)Yarn and Weave</a>
+			<a id="s-2">(2)Bleach and Dye</a>
+			<a id="s-3">(3)Cut and Sew</a>
+			<a id="s-4">(4)Transportation</a>
+		</div>
+
+		<script src="../lib/box2d-html5.js"></script>
+		<script src="../lib/box2d-helper.js"></script>
+		<script src="https://google.github.io/liquidfun/testbed/liquidfun.js"></script>
+		<script src="https://google.github.io/liquidfun/testbed/testbed/three.js" ></script>
+		<script src="https://cdn.rawgit.com/hapticdata/toxiclibsjs/master/build/toxiclibs.min.js"></script>
+		<script src="toxichelper.js"></script>
+		<script src="particle.js"></script>
+		<script src="boundary.js"></script>
+		<script src="spring.js"></script>		
+		<script src="truck.js"></script>
+		<script src="info.js"></script>
+		<script src="sketch.js"></script>		
+	</body>
+</html> 

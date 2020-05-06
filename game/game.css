@@ -1,0 +1,48 @@
+body {
+    font-family: 'Poppins', sans-serif; 
+    overflow-x: hidden;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:hover {
+    background-color: blanchedalmond !important;
+}
+
+
+
+#next-button {
+    width: 100px;
+}
+
+#next-button:hover {
+    background-color: skyblue !important;
+}
+
+#canvas {
+    left: 0;
+    top: 0;
+    position: fixed;
+    display: block;
+    z-index: -9999;
+}
+
+.info {
+    color: black;
+    position: absolute;
+    height: 50px;
+    top: 25%;
+    left: 50%;
+    margin-left: -300px; /* margin is -0.5 * dimension */
+    margin-top: -25px;   
+}
+
+.scene {
+    margin-left: 40px;
+    margin-top: 20px;
+    font-style: italic;
+    color: slategrey;
+    font-size: large;
+}

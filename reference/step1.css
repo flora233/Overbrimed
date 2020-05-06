@@ -1,0 +1,22 @@
+body {
+    font-family: 'Poppins', sans-serif; 
+    overflow-x: hidden;
+}
+
+#canvas {
+    left: 0;
+    top: 0;
+    position: fixed;
+    display: block;
+    z-index: -9999;
+}
+
+.info {
+    color: black;
+    position: absolute;
+    height: 50px;
+    top: 25%;
+    left: 50%;
+    margin-left: -300px; /* margin is -0.5 * dimension */
+    margin-top: -25px;   
+}

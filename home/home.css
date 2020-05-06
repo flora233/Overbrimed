@@ -1,0 +1,45 @@
+body {
+    font-family: 'Poppins', sans-serif; 
+    overflow-x: hidden;
+}
+
+#canvas {
+    left: 0;
+    top: 0;
+    position: fixed;
+    display: block;
+    z-index: -9999;
+}
+
+.start-button {
+    color: black;
+    position: absolute;
+    width: 700px;
+    background-color: white;
+    top: 45%;
+    left: 40%;
+    border: 1px solid black;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.start-button:hover {
+    background-color: khaki !important;
+}
+
+.info {
+    font-size: x-large;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    width: 700px;
+    border: 1px solid black;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.info:hover {
+    background-color: lightskyblue;
+}
